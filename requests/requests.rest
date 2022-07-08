@@ -6,10 +6,20 @@ POST http://localhost:3001/api/notes/ HTTP/1.1
 content-type: application/json
 
 {
-    "content": "test test",
+    "content": "lol",
     "important": true
 }
 
 ###
 
 GET http://localhost:3001/unknown/end/point/
+
+###
+
+PUT http://localhost:3001/api/notes/62c4fd8029aca69dbdf3c5aa HTTP/1.1
+content-type: application/json
+
+{
+    "content": "test",
+    "important": true
+}
